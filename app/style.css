@@ -33,7 +33,7 @@ html {
     height: 55rem;
     position: relative;
     border-radius: 2.5rem;
-    background-color: #eee;
+    background-color: #ccc;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
 }
 
@@ -42,7 +42,12 @@ html {
     height: 50%;
     padding: 3rem;
     background: #f1ae04;
+    transition: background 0.5s;
     border-radius: 2.5rem 2.5rem 0 0;
+}
+
+.container.change .card-top {
+    background: #d35246;
 }
 
 .logo {
@@ -66,6 +71,23 @@ html {
     width: 30rem;
     right: -10rem;
     position: absolute;
+    transition: transform 1s;
+}
+
+.container.change .shoe-1 {
+    transform: translateX(-50rem) rotateZ(45deg);
+}
+
+.shoe-2 {
+    top: -10rem;
+    width: 33rem;
+    right: -45rem;
+    position: absolute;
+    transition: transform 1s;
+}
+
+.container.change .shoe-2 {
+    transform: translateX(-40rem) rotateZ(-45deg);
 }
 
 .card-bottom {
@@ -84,15 +106,15 @@ html {
 
 .badge {
     top: 30rem;
-    color: #fff;
+    color: #000;
     right: 5rem;
     width: 3.5rem;
     display: grid;
     height: 1.6rem;
+    background: cyan;
     font-weight: bold;
     font-size: 0.9rem;
     position: absolute;
-    background: tomato;
     place-items: center;
     border-radius: 0.3rem;
     letter-spacing: 0.1rem;
@@ -135,13 +157,13 @@ html {
 }
 
 .sizes span:nth-child(3) {
-    color: #fff;
+    color: #000;
     width: 2rem;
     height: 2rem;
     display: grid;
+    background: cyan;
     border-radius: 50%;
     place-items: center;
-    background: tomato;
 }
 
 .color h4 {
@@ -186,7 +208,13 @@ html {
     background: #1c477a;
     border-radius: 0.5rem;
     justify-content: center;
+    transition: background 0.5s;
     box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+}
+
+.container.change .price {
+    background: #c02244;
+    box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
 }
 
 .price span {
